@@ -1,0 +1,79 @@
+:root {
+    --rugby-green: #1b4d1d;
+    --rugby-accent: #ffc107;
+    --rugby-dark: #111111;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f7;
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--rugby-green);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--rugby-accent) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image/hero.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: var(--rugby-green);
+    border-bottom: 4px solid var(--rugby-accent);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.page-section {
+    display: none; 
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.page-section.active {
+    display: block; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+footer {
+    background-color: var(--rugby-dark);
+    color: #aaa;
+    padding: 30px 0;
+    margin-top: 60px;
+}

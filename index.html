@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Rugby - Paixão e Disciplina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="mudarPagina('home')">🏉 Rugby World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="mudarPagina('home')">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="mudarPagina('regras')">Regras</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Fases do Jogo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="mudarPagina('scrum')">Scrum</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mudarPagina('lineout')">Lineout</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mudarPagina('maul')">Maul & Huck</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-warning" href="#" onclick="mudarPagina('quiz')">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="page-section active">
+        <header class="hero-section">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Mais que um esporte</h1>
+                <p class="lead">Respeito, Disciplina, Paixão, Solidariedade e Trabalho em Equipe.</p>
+                <button class="btn btn-warning btn-lg fw-bold mt-3" onclick="mudarPagina('regras')">Aprenda a Jogar</button>
+            </div>
+        </header>
+
+        <div class="container my-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Os Valores do Rugby</h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <img src="image/arbitro.jpg" class="card-img-top rounded" alt="Árbitro">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Respeito ao Árbitro</h5>
+                            <p class="card-text">Apenas o capitão fala com o árbitro ("Sir"). Reclamações não são toleradas e geram penalidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <img src="image/terceirotempo.jpg" class="card-img-top rounded" alt="Terceiro Tempo">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">O Terceiro Tempo</h5>
+                            <p class="card-text">Após o jogo, os adversários se juntam para confraternizar. A rivalidade fica apenas dentro de campo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <img src="image/inclusao.jpg" class="card-img-top rounded" alt="Inclusão">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Um Esporte para Todos</h5>
+                            <p class="card-text">Há lugar para todos os tipos físicos: os fortes no pack, os rápidos nas pontas e os ágeis na criação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrum" class="page-section">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">O Scrum</h2>
+                    <p class="lead">Força bruta coordenada.</p>
+                    <p>O Scrum reinicia o jogo após infrações leves (passe para frente). Oito jogadores de cada time se empurram para ganhar a posse da bola.</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>1ª Linha:</strong> Pilares e Hooker (seguram o impacto).</li>
+                        <li class="list-group-item"><strong>2ª Linha:</strong> Os jogadores mais altos (força motriz).</li>
+                        <li class="list-group-item"><strong>3ª Linha:</strong> Asas e Oitavo (controle e velocidade).</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="image/scrum.webp" class="img-fluid rounded shadow-lg" alt="Scrum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lineout" class="page-section">
+        <div class="container my-5">
+            <h2 class="section-title text-center">O Lineout (Lateral)</h2>
+            <div class="row mt-4">
+                <div class="col-md-5">
+                    
+                    <img src="image/lineout.jpg" class="img-fluid rounded shadow" alt="Lineout">
+                </div>
+                <div class="col-md-7">
+                    <div class="card p-4 bg-light h-100">
+                        <h4>A Torre Humana</h4>
+                        <p>Quando a bola sai pela lateral, ocorre o Lineout. O Hooker lança a bola e seus companheiros levantam um saltador para pegá-la no ar.</p>
+                        <div class="alert alert-info">
+                            <strong>Regra de Ouro:</strong> O arremesso deve ser reto, no meio das duas linhas de times.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="maul" class="page-section">
+        <div class="container my-5">
+            <h2 class="section-title text-center mb-5">O Jogo Aberto</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-success">
+                        <div class="card-header bg-success text-white">Huck (Bola no chão)</div>
+                        <img src="image/huck.jpeg" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <p>Após um tackle, forma-se o huck. Ninguém pode usar as mãos, a bola deve ser conquistada empurrando o adversário para trás.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-warning">
+                        <div class="card-header bg-warning text-dark">Maul (Bola em pé)</div>
+                        <img src="image/maul.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <p>O jogador com a bola é segurado, mas não cai. Companheiros se juntam a ele para formar uma "casa" e empurrar a defesa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="regras" class="page-section">
+        <div class="container my-5">
+            <h2 class="section-title">Regras Básicas</h2>
+            <div class="accordion" id="accordionRegras">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. O Passe</button></h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show"><div class="accordion-body">A bola só pode ser passada para <strong>trás</strong> ou para o lado. Passe para frente é infração.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Pontuação</button></h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse"><div class="accordion-body"><strong>Try (5 pts):</strong> Apoiar a bola no in-goal.<br><strong>Conversão (2 pts):</strong> Chute após o try.<br><strong>Penal (3 pts):</strong> Chute de falta.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. O Tackle</button></h2>
+                    <div id="collapseThree" class="accordion-collapse collapse"><div class="accordion-body">O tackle deve ser feito abaixo dos ombros. Tackles altos são perigosos e proibidos.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+        <div class="container my-5">
+            <h2 class="section-title text-center">Teste seu conhecimento</h2>
+            <p class="text-center mb-5">Você aprendeu as regras? Vamos ver!</p>
+
+            <div class="card p-4 mx-auto" style="max-width: 700px;">
+                <form id="rugbyQuizForm">
+                    <div class="mb-4">
+                        <p class="fw-bold">1. Quantos pontos vale um Try?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" value="3">
+                            <label class="form-check-label">3 Pontos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" value="5">
+                            <label class="form-check-label">5 Pontos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" value="7">
+                            <label class="form-check-label">7 Pontos</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="fw-bold">2. Para onde é permitido passar a bola com as mãos?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" value="frente">
+                            <label class="form-check-label">Para frente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" value="qualquer">
+                            <label class="form-check-label">Para qualquer lugar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" value="tras">
+                            <label class="form-check-label">Para trás ou para o lado</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="fw-bold">3. Como se chama a formação onde os times se empurram?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="lineout">
+                            <label class="form-check-label">Lineout</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="scrum">
+                            <label class="form-check-label">Scrum</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="ruck">
+                            <label class="form-check-label">Huck</label>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-success" onclick="verificarQuiz()">Verificar Respostas</button>
+                    </div>
+                </form>
+
+                <div id="resultadoQuiz" class="mt-4 text-center fw-bold" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+<br>
+<br>
+<br>
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Projeto Guia do Rugby.<br> Nicolas Reis</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
